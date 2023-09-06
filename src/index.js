@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App(){
+  return <>
+    <div className='card'>
+        <div id='img'>
+          <img src='me.jpg' alt='me'></img>
+        </div>
+        <div>
+          <h3>Moksh Sharma</h3>
+          <p>Full-stack web developer and teacher at Study Warriors. When not coding or prepearing a course ,
+           I like to play chess, to eat , or to just enjoy the movies.</p>
+        </div>
+       <div id='bt'>
+        <button id='a'>HTML + CSS</button>
+        <button id='b'>JavaScript</button>
+        <button id='c'>PHP + SQL</button>
+        <button id='d'>React</button>
+       </div>
+    </div>
+  </>
+}
